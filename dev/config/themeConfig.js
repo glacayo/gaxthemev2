@@ -9,7 +9,7 @@ module.exports = {
 	dev: {
 		browserSync: {
 			live: true,
-			proxyURL: 'wprig.test:8888',
+			proxyURL: 'localhost/gaxtheme/',
 			bypassPort: '8181'
 		},
 		browserslist: [ // See https://github.com/browserslist/browserslist
