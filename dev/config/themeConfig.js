@@ -2,9 +2,9 @@
 
 module.exports = {
 	theme: {
-		slug: 'wprig',
-		name: 'WP Rig',
-		author: 'Morten Rand-Hendriksen'
+		slug: 'gaxthemev2',
+		name: 'GAX Theme',
+		author: 'Geovanny Lacayo'
 	},
 	dev: {
 		browserSync: {
