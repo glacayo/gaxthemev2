@@ -34,10 +34,8 @@
 						<div class="col-12">
 							<img src="https://via.placeholder.com/280x90" class="img-fluid custom-logo" alt="">
 							<div id="socialmedia"> 
-								<a class="icon-facebook" href="https://www.facebook.com/cinemasnic" target="_blank"></a> 
-								<a class="icon-instagram" href="https://instagram.com/cinemasnic" target="_blank"></a> 
-								<a class="icon-twitter" href="https://twitter.com/CinemasNic" target="_blank"></a> 
-								<a class="icon-youtube" href="https://www.youtube.com/channel/UC9dKc8rFAu9w0SYS-0jO3Yg" target="_blank"></a> 
+								<a class="icon-facebook" href="" target="_blank"></a> 
+								<a class="icon-google" href="" target="_blank"></a>
 								<a class="top-phone" href="tel:00000000">Phone: (000) 000-0000</a> 
 							</div>
 						</div>
