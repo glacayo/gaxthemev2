@@ -44,7 +44,8 @@ function wprig_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'primary' => esc_html__( 'Primary', 'wprig' ),
+			'header-menu' => esc_html__( 'Header', 'wprig' ),
+			'footer-menu' => esc_html__( 'Footer', 'wprig' ),
 		)
 	);
 
@@ -322,6 +323,7 @@ function wprig_styles() {
 	wp_enqueue_style( 'wprig-base-style', get_stylesheet_uri(), array(), '20180514' );
 
 	// Register component styles that are printed as needed.
+	wp_enqueue_style( 'wprig-bootstrap-grid', get_theme_file_uri() . '/css/bootstrap-grid.css', array(), '40' );
 	wp_register_style( 'wprig-comments', get_theme_file_uri( '/css/comments.css' ), array(), '20180514' );
 	wp_register_style( 'wprig-content', get_theme_file_uri( '/css/content.css' ), array(), '20180514' );
 	wp_register_style( 'wprig-sidebar', get_theme_file_uri( '/css/sidebar.css' ), array(), '20180514' );
@@ -351,6 +353,10 @@ function wprig_scripts() {
 	// Enqueue skip-link-focus script.
 	wp_enqueue_script( 'wprig-skip-link-focus-fix', get_theme_file_uri( '/js/skip-link-focus-fix.js' ), array(), '20180514', false );
 	wp_script_add_data( 'wprig-skip-link-focus-fix', 'defer', true );
+	wp_enqueue_script( 'wprig-jqueryslim', get_theme_file_uri( '/js/jquery.slim.min.js' ), array(), '321', false );
+	wp_script_add_data( 'wprig-jqueryslim', 'defer', true );
+	wp_enqueue_script( 'wprig-bootstrapjs', get_theme_file_uri( '/js/bootstrap.js' ), array( 'wprig-jqueryslim' ), '40', false );
+	wp_script_add_data( 'wprig-bootstrapjs', 'defer', true );
 
 	// Enqueue comment script on singular post/page views only.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

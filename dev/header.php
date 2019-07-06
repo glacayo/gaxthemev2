@@ -28,23 +28,21 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wprig' ); ?></a>
 		<header id="masthead" class="site-header">
-			<?php if ( has_header_image() ) : ?>
-				<figure class="header-image">
-					<?php the_header_image_tag(); ?>
-				</figure>
-			<?php endif; ?>
 			<div class="site-branding">
-				<?php the_custom_logo(); ?>
-				<?php if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php endif; ?>
-
-				<?php $wprig_description = get_bloginfo( 'description', 'display' ); ?>
-				<?php if ( $wprig_description || is_customize_preview() ) : ?>
-					<p class="site-description"><?php echo $wprig_description; /* WPCS: xss ok. */ ?></p>
-				<?php endif; ?>
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<img src="https://via.placeholder.com/280x90" class="img-fluid custom-logo" alt="">
+							<div id="socialmedia"> 
+								<a class="icon-facebook" href="https://www.facebook.com/cinemasnic" target="_blank"></a> 
+								<a class="icon-instagram" href="https://instagram.com/cinemasnic" target="_blank"></a> 
+								<a class="icon-twitter" href="https://twitter.com/CinemasNic" target="_blank"></a> 
+								<a class="icon-youtube" href="https://www.youtube.com/channel/UC9dKc8rFAu9w0SYS-0jO3Yg" target="_blank"></a> 
+								<a class="top-phone" href="tel:00000000">Phone: (000) 000-0000</a> 
+							</div>
+						</div>
+					</div>
+				</div>
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Main menu', 'wprig' ); ?>"
@@ -62,7 +60,7 @@
 					</amp-state>
 				<?php endif; ?>
 
-				<button class="menu-toggle" aria-label="<?php esc_attr_e( 'Open menu', 'wprig' ); ?>" aria-controls="primary-menu" aria-expanded="false"
+				<button class="menu-toggle d-block d-sm-none" aria-label="<?php esc_attr_e( 'Open menu', 'wprig' ); ?>" aria-controls="primary-menu" aria-expanded="false"
 					<?php if ( wprig_is_amp() ) : ?>
 						on="tap:AMP.setState( { siteNavigationMenu: { expanded: ! siteNavigationMenu.expanded } } )"
 						[aria-expanded]="siteNavigationMenu.expanded ? 'true' : 'false'"
@@ -71,18 +69,24 @@
 					<?php esc_html_e( 'Menu', 'wprig' ); ?>
 				</button>
 
-				<div class="primary-menu-container">
-					<?php
+				<div class="primary-menu-container text-right">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<?php
 
-					wp_nav_menu(
-						array(
-							'theme_location' => 'primary',
-							'menu_id'        => 'primary-menu',
-							'container'      => 'ul',
-						)
-					);
+								wp_nav_menu(
+									array(
+										'theme_location' => 'primary',
+										'menu_id'        => 'primary-menu',
+										'container'      => 'ul',
+									)
+								);
 
-					?>
+								?>
+							</div>
+						</div>
+					</div>
 				</div>
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->

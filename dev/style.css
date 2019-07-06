@@ -730,13 +730,32 @@ textarea {
 }
 
 .custom-logo-link {
-	display: inline-block;
+	/*display: inline-block;*/
 	margin: 0 auto 1em;
+}
+
+.custom-logo{
+	float: left;
+    width: 280px;
+    height: auto;
+    padding: 15px 0;
+    display: table;
 }
 
 .site-branding {
 	text-align: center;
-	padding: 60px 0 1.75em;
+	/*padding: 0px 0 1.75em;*/
+	background: #fff;
+	width: 100%;
+}
+
+#socialmedia {
+	float: right;
+	font-size: 27px;
+}
+
+#socialmedia a.top-phone {
+	margin: 37px 0 0 15px !important;
 }
 
 .site-title {
@@ -773,6 +792,7 @@ textarea {
 	padding: 0 1em;
 	max-width: var(--content-width)rem;
 	font-family: var(--highlight-font-family);
+	background: #111;
 }
 
 .menu-toggle {
@@ -801,7 +821,8 @@ textarea {
 }
 
 .main-navigation ul {
-	display: block;
+	display: table;
+	margin: 0 auto!important;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -820,8 +841,30 @@ textarea {
 	display: none;
 }
 
-.main-navigation .menu {
+/*.main-navigation .menu {
 	display: none;
+}*/
+
+.main-navigation .menu li {
+	display: inline-block;
+	padding: 24px 3px;
+}
+
+.menu li a {
+	color: #fff;
+	text-transform: uppercase;
+	padding: 2px 15px;
+	letter-spacing: 0.025em;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.menu li:hover {
+	background: gray;
+}
+
+.menu li a:hover{
+	text-decoration: none;
 }
 
 @media (--narrow-menu-query) {
