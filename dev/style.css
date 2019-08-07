@@ -393,6 +393,10 @@ template {
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
+.text-center{
+	text-align: center;
+}
+
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -438,7 +442,7 @@ template {
 
 @media (--sidebar-query) {
 	.has-sidebar .site {
-		margin: 0 1em;
+		/*margin: 0 1em;*/
 		display: grid;
 		grid-template-columns: 3fr 1fr;
 		grid-gap: 2rem;
@@ -717,7 +721,7 @@ textarea {
 --------------------------------------------------------------*/
 
 .site-header {
-	padding-bottom: 1em;
+	/*padding-bottom: 1em;*/
 }
 
 .header-image {
@@ -788,9 +792,9 @@ textarea {
 .main-navigation {
 	clear: both;
 	display: block;
-	margin: 0 auto 2em;
+	/*margin: 0 auto 2em;*/
 	padding: 0 1em;
-	max-width: var(--content-width)rem;
+	/*max-width: var(--content-width)rem;*/
 	font-family: var(--highlight-font-family);
 	background: #111;
 }
