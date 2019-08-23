@@ -87,3 +87,6 @@
     width: 452px;
     z-index: 2;
 }
+.service-box{
+	background-color: gray;
+}

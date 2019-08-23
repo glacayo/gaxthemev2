@@ -19,6 +19,7 @@ wp_print_styles( array( 'wprig-content', 'wprig-front-page' ) ); // Note: If thi
 ?>
 <?php
 get_template_part( 'template-parts/template', 'slider' );
+get_template_part( 'template-parts/template', 'services' );
 ?>
 	<main id="primary" class="site-main">
 
