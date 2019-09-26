@@ -753,15 +753,6 @@ textarea {
 	width: 100%;
 }
 
-#socialmedia {
-	float: right;
-	font-size: 27px;
-}
-
-#socialmedia a.top-phone {
-	margin: 37px 0 0 15px !important;
-}
-
 .site-title {
 	margin: 0 1em;
 	font-family: var(--highlight-font-family);
@@ -1058,4 +1049,19 @@ textarea {
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
 	display: block;
+}
+/*----------------------------------------------------------------
+# Padding
+------------------------------------------------------------------*/
+.pt-40{
+	padding-top: 40px;
+}
+/*----------------------------------------------------------------
+# Header
+------------------------------------------------------------------*/
+.top-phone{
+	font-size: 1.7em;
+}
+.icon-facebook img{
+	width: 50px;
 }
