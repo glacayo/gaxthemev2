@@ -324,7 +324,7 @@ function wprig_styles() {
 
 	// Register component styles that are printed as needed.
 	wp_enqueue_style( 'wprig-bootstrap-grid', get_theme_file_uri() . '/css/bootstrap-grid.css', array(), '40' );
-	wp_register_style( 'wprig-front-page', get_theme_file_uri( '/css/header.css' ), array(), '20180514' );
+	wp_register_style( 'wprig-header-page', get_theme_file_uri( '/css/header.css' ), array(), '20180514' );
 	wp_register_style( 'wprig-comments', get_theme_file_uri( '/css/comments.css' ), array(), '20180514' );
 	wp_register_style( 'wprig-content', get_theme_file_uri( '/css/content.css' ), array(), '20180514' );
 	wp_register_style( 'wprig-sidebar', get_theme_file_uri( '/css/sidebar.css' ), array(), '20180514' );

@@ -1,4 +1,10 @@
 <section class="container">
+	<div class="row">
+		<div class="col-md-12 py-5">
+			<h1 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h1>
+			<h2 class="text-center"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small></h2>
+		</div>
+	</div>
     <div class="row">
         <div class="col-md-4">
             <div class="service-box">
