@@ -75,7 +75,7 @@
     vertical-align: middle;
     width: 70%;
     padding-bottom: 70px;
-    padding-top: 60px;
+    padding-top: 41px;
 }
 .get-touch > figure {
     display: inline-block;
@@ -94,4 +94,10 @@
 }
 .service-box{
 	background-color: gray;
+}
+.service-box h2{
+	padding-left: 18px;
+}
+.service-box p{
+	padding: 18px;
 }

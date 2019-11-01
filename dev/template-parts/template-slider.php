@@ -13,21 +13,41 @@
 						<img src="<?php bloginfo( 'template_directory' ); ?>/images/temporal/plumber.png" alt="" class="img-fluid">
 					</figure>
 					<div class="touch-form">
+						<h2><small>Get in touch</small><br>Lorem ipsum dolor sit amet. Nostrum, pariatur totam vitae commodi amet odit?</h2>
 						<form>
-						<div class="form-group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-						</div>
-						<div class="form-group">
-							<label for="exampleInputPassword1">Password</label>
-							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-						</div>
-						<div class="form-check">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Check me out</label>
-						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+							<div class="row">
+								<div class="col-md-12 col-lg-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Name">
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="col-md-12 col-lg-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Phone">
+									</div>
+									<div class="form-group">
+										<select class="form-control">
+											<option selected>Select</option>
+											<option value="Services 1">Services 1</option>
+											<option value="Services 2">Services 2</option>
+											<option value="Services 3">Services 3</option>
+											<option value="Services 4">Services 4</option>
+											<option value="Services 5">Services 5</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea name="message" class="form-control" cols="10" rows="5" placeholder="Message"></textarea>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
 						</form>
 					</div>
 				</div>
