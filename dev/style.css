@@ -1471,4 +1471,6 @@ select.form-control-lg:not([size]):not([multiple]) {
         top: 0
     }
 }
-
+.grid-column2{
+	grid-column: span 2;
+}

@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container grid-column2">
 	<div class="row">
 		<div class="col-md-12 py-5">
 			<h1 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h1>
