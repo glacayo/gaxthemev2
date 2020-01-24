@@ -329,6 +329,7 @@ function wprig_styles() {
 	wp_register_style( 'wprig-sidebar', get_theme_file_uri( '/css/sidebar.css' ), array(), '20180514' );
 	wp_register_style( 'wprig-widgets', get_theme_file_uri( '/css/widgets.css' ), array(), '20180514' );
 	wp_enqueue_style( 'wprig-header', get_template_directory_uri() . '/css/header.css', false, '1.1', 'all' );
+	wp_enqueue_style( 'wprig-testimonials', get_theme_file_uri( '/css/testimonials.css' ), array(), '20180514' );
 	wp_register_style( 'wprig-front-page', get_theme_file_uri( '/css/front-page.css' ), array(), '20180514' );
 }
 add_action( 'wp_enqueue_scripts', 'wprig_styles' );
@@ -358,6 +359,8 @@ function wprig_scripts() {
 	wp_script_add_data( 'wprig-jqueryslim', 'defer', true );
 	wp_enqueue_script( 'wprig-bootstrapjs', get_theme_file_uri( '/js/bootstrap.js' ), array( 'wprig-jqueryslim' ), '40', false );
 	wp_script_add_data( 'wprig-bootstrapjs', 'defer', true );
+	wp_enqueue_script( 'wprig-testimonials', get_theme_file_uri( '/js/testimonials.js' ), array( 'wprig-jqueryslim' ), '40', false );
+	wp_script_add_data( 'wprig-testimonials', 'defer', true );
 
 	// Enqueue comment script on singular post/page views only.
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
